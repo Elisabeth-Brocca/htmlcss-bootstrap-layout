@@ -10,61 +10,48 @@
 </head>
 <body>
 
-    <header>
-        <div class="container">
-                 <div class="collum text-center p-4">
-                        <h1>Bootstrap 5 Responsive Grid</h1>
-                        <p>Layout a griglia con diversi breakpoint (sm,mg,lg)</p>
-                    </div>
+    <div class="container text-center p-4">
+        <h1>Bootstrap 5 Responsive Grid</h1>
+        <p>Layout a griglia con diversi breakpoint (sm,mg,lg)</p>
+    </div>
+
+    <!-- prima colonna -->
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-12 p-4 bg-light col-md-6 col-lg-4">
+                <h2>Colonna 1</h2>
+                <p>Larghezza intera su dispositivi piccoli,metà <br>
+                larghezza su dispositivi medi e un terzo su <br>
+                dispositivi grandi.</p>
+            </div>
+            <div class="col-12 p-4 bg-secondary text-white col-md-6 col-lg-8">
+                <h2>Colonna 2</h2>
+                <p>Larghezza intera su dispositivi piccoli, metà larghezza su dispositivi medi e due terzi su dispositivi <br>
+                grandi.</p>
+            </div>    
         </div>
-    </header>
-
-
-
-    <div class="container">
-
-        <!-- prima colonna -->
-
-        <div class="row justify-content-center">
-            <div class="col-4 p-4 bg-light">
-                <h3>Colonna 1</h3>
-                  <div>Larghezza intera su dispositivi piccoli,metà <br>
-                    larghezza su dispositivi medi e un terzo su <br>
-                    dispositivi grandi.
-                </div>
+    </div>
+    <!-- seconda colonna -->
+    <div class="container my-4 text-white">    
+        <div class="row row-cols-md-3">
+            <div class="col-6 p-4 bg-primary">
+                <h2>Colonna 1</h2>
+                <p>Metà larghezza su dispositivi piccoli e un terzo <br>
+                su dispositivi medi e piu grandi.</p>
             </div>
-            <div class="col-8  p-4 bg-body-secondary">
+            <div class="col-6 p-4 bg-success">
                 <h3>Colonna 2</h3>
-                <div>Larghezza intera su dispositivi piccoli, metà larghezza su dispositivi medi e due terzi su dispositivi <br>
-                    grandi.
-                </div>
+                <p>Metà larghezza su dispositivi piccoli e un terzo <br>
+                    su dispositivi medi e piu grandi.</p>
             </div>
-
-        <!-- seconda colonna -->
-
-            <div class="row gy-4 text-light justify-content-center">
-                
-                <div class="col-4 p-4 bg-primary">
-                    <h3>Colonna 1</h3>
-                    <div>Metà larghezza su dispositivi piccoli e un terzo <br>
-                        su dispositivi medi e piu grandi.
-                    </div>
-                </div>
-                <div class="col-4 p-4 bg-success">
-                    <h3>Colonna 2</h3>
-                     <div>Metà larghezza su dispositivi piccoli e un terzo <br>
-                        su dispositivi medi e piu grandi.
-                    </div>
-                </div>
-                <div class="col-4 p-4 bg-danger">
-                    <h3>Colonna 3</h3>
-                     <div>Larghezza intera su dispositivi piccoli (col-12) e <br>
-                         un terzo su dispositivi medi e piu grandi.
-                    </div>
-                </div>
+            <div class="col-12 p-4 bg-danger">
+                <h2>Colonna 3</h2>
+                <p>Larghezza intera su dispositivi piccoli (col-12) e <br>
+                    un terzo su dispositivi medi e piu grandi.</p>
             </div>
-
-        <!-- terza colonna -->
+        </div>
+    </div>
+    <!-- terza colonna -->
 
             <div class="row gy-4 text-light justify-content-center">
                 
@@ -97,8 +84,7 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
+        
 
 
 
